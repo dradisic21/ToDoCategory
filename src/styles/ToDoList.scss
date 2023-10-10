@@ -1,0 +1,80 @@
+.container-list{
+  padding: 20px 10px;
+  max-height: 880px;
+  overflow-y: auto;
+  margin: 10px;
+
+  .task-box {
+    width: 100%;
+    max-width: 850px;
+    min-height: 70px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+      rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px;
+    position: relative;
+
+    .content-task {
+      display: flex;
+
+      .color-task {
+        min-height: 70px;
+        width: 48px;
+        border-radius: 10px 0 0 10px;
+        background-color: #FFD800;
+      }
+
+      .task-text {
+        display: flex;
+        align-items: center;
+        text-align: left; 
+        flex-grow: 1;
+        min-width: 150px;
+        max-width: 650px;
+        word-break: break-word;
+        padding-left: 8px;
+
+        p {
+          &.completed-text {
+            text-decoration: line-through;
+          }
+        }
+      }
+
+      .controls {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .delete-task {
+          position: absolute; 
+          right: 10px;
+          margin: 5px 0;
+        }
+      }
+
+      .date-task {
+        text-align: center;
+        position: absolute;
+        left: 10px;
+        top: 10%;
+      }
+    
+    }
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .content-task {
+    .task-text {
+      width: 200px;
+    }
+    .check-list {
+      right: 55px !important;
+    }
+  }
+}

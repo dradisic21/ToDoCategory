@@ -1,0 +1,33 @@
+$font-color: rgb(172, 172, 172);
+span {
+    font-size: 15px;
+    font-weight: 600;
+    font-style: italic;
+  }
+  .month {
+    font-size: 15px;
+    font-weight: 600;
+    font-style: italic;
+  }
+  .time {
+    padding-top: 2px;
+    font-size: 10px;
+    font-weight: 500;
+  }
+
+  .day-date-month{
+    width: 100px;
+    text-align: center;
+    .weekday {
+      color: rgb(172, 172, 172);
+      font-weight: 900;
+    }
+    .day{
+      font-size: 35px;
+      font-weight: bold;
+    }
+    .header-month{
+      color: $font-color;
+      font-weight: 500;
+    }
+  }
